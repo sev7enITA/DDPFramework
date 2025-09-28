@@ -207,7 +207,7 @@ The interactive demo showcases all three modules of the DDP Framework:
 - Independent ethical oversight
 - Cross-functional collaboration
 
-## 📊 Metrics & KPIs
+## 📊 Metrics & KPIs (preliminary scope)
 
 The DDP Framework introduces leading indicators for privacy risk management:
 
