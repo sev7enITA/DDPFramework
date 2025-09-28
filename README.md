@@ -107,7 +107,7 @@ Fairness, transparency, and user autonomy are embedded as first-class requiremen
 - DevSecOps infrastructure with CI/CD pipelines
 - Open Policy Agent (OPA) deployment
 - Infrastructure-as-Code tools (Terraform, Ansible)
-- Cross-functional team with legal, technical, and ethical expertise
+- Cross-functional team with legal, technical and ethical expertise
 
 ### Quick Start
 
@@ -176,7 +176,7 @@ The interactive demo showcases all three modules of the DDP Framework:
 - **Threat Modeling** - Future-proofing against quantum computing and BCIs
 - **Simulation Mode** - Demonstrates framework responses to various scenarios
 
-### Screenshots
+### Screenshots (work in progress)
 
 *Dashboard Overview*
 ![Dashboard](docs/images/dashboard.png)
@@ -256,7 +256,7 @@ The DDP Framework is designed to address emerging privacy challenges:
 - **Edge privacy** enforcement
 - **Federated learning** security
 
-## 🚀 Getting Started
+## 🚀 Getting Started (work in progress)
 
 ### For Developers
 1. Clone the repository
@@ -274,7 +274,7 @@ The DDP Framework is designed to address emerging privacy challenges:
 2. Establish ethical oversight board
 3. Define escalation procedures
 
-## 📚 Documentation
+## 📚 Documentation (work in progress)
 
 ### Core Documentation
 - [Architecture Deep Dive](docs/architecture.md)
@@ -294,7 +294,7 @@ The DDP Framework is designed to address emerging privacy challenges:
 - [Policy Engine SDK](docs/sdk.md)
 - [Integration Examples](docs/examples.md)
 
-## 🤝 Contributing
+## 🤝 Contributing (work in progress)
 
 We welcome contributions from the privacy, legal, and technology communities!
 
@@ -330,7 +330,7 @@ If you use this framework in your research or implementation, please cite:
 }
 ```
 
-## 📖 Related Publications
+## 📖 Related Publications (work in progress)
 
 - **Primary Paper**: [Dynamic Digital Privacy: A DevSecOps Framework for an Evolving Threat Landscape](docs/paper.pdf)
 - **Conference Presentation**: [Bridging the Privacy Gap: Introducing the Dynamic Digital Privacy Framework](docs/presentation.pdf)
@@ -347,15 +347,14 @@ This project implements privacy by design principles:
 ## 🏆 Recognition
 
 - **IEEE ISOPE 2025** - Featured presentation
-- **Future Directions Award** - IEEE Digital Privacy Initiative
-- **Innovation in Privacy Engineering** - Academic recognition
+
 
 ## 📞 Contact & Support
 
 ### Primary Author
 **Fabrizio Degni**  
 Chief of Artificial Intelligence  
-Email: [contact information]  
+Email: io@fabriziodegni.com  
 LinkedIn: [https://www.linkedin.com/in/fdegni/](https://www.linkedin.com/in/fdegni/)
 
 ### Conference Information
@@ -383,6 +382,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-*© 2025 Fabrizio Degni. The Dynamic Digital Privacy Framework represents a paradigm shift toward adaptive, ethical, and automated privacy governance in the age of rapid technological evolution.*
+*© 2025 Fabrizio Degni. The Dynamic Digital Privacy Framework represents a paradigm shift toward adaptive, ethical and automated privacy governance in the age of rapid technological evolution.*
 
 **Built for IEEE ISOPE 2025 | New York City | [ieee-isope.org](https://ieee-isope.org/)**
