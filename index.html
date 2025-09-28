@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Digital Privacy Framework - IEEE ISOPE 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="framework-title">Dynamic Digital Privacy Framework</h1>
+                    <span class="version-badge">v2025.1</span>
+                </div>
+                <div class="header-right">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span>System Active</span>
+                    </div>
+                    <button class="btn btn--outline btn--sm simulation-toggle">
+                        Start Simulation
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Dashboard -->
+        <main class="main-content">
+            <!-- Key Metrics Dashboard -->
+            <section class="metrics-dashboard">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value" id="mttr">8 min</div>
+                        <div class="metric-label">Mean Time to Resolution</div>
+                        <div class="metric-trend positive">-12% this week</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="violation-rate">12%</div>
+                        <div class="metric-label">Policy Violation Rate</div>
+                        <div class="metric-trend negative">+2% this week</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="exception-rate">0.3%</div>
+                        <div class="metric-label">Exception Request Rate</div>
+                        <div class="metric-trend positive">-0.1% this week</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="audit-time">&lt; 1 hour</div>
+                        <div class="metric-label">Audit Readiness Time</div>
+                        <div class="metric-trend positive">-30 min</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alerts Banner -->
+            <section class="alerts-banner" id="alerts-banner">
+                <div class="alert-item high">
+                    <div class="alert-icon">⚠️</div>
+                    <div class="alert-content">
+                        <div class="alert-title">Policy Violation Detected</div>
+                        <div class="alert-message">Unencrypted database deployment blocked in CI/CD pipeline</div>
+                    </div>
+                    <div class="alert-time">2 min ago</div>
+                </div>
+            </section>
+
+            <!-- Navigation Tabs -->
+            <nav class="tab-navigation">
+                <button class="tab-btn active" data-tab="overview">Framework Overview</button>
+                <button class="tab-btn" data-tab="legal-policy">Legal-Policy Module</button>
+                <button class="tab-btn" data-tab="technical">Technical-Enforcement</button>
+                <button class="tab-btn" data-tab="ethical">Ethical-Governance</button>
+                <button class="tab-btn" data-tab="documentation">Documentation</button>
+            </nav>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Overview Tab -->
+                <div class="tab-panel active" id="overview">
+                    <div class="overview-grid">
+                        <div class="framework-diagram">
+                            <h3>Framework Architecture</h3>
+                            <div class="architecture-visual">
+                                <div class="module-box legal">
+                                    <h4>Legal-Policy Module</h4>
+                                    <p>Regulation → Policy-as-Code</p>
+                                    <div class="module-stats">
+                                        <span>94% GDPR Coverage</span>
+                                        <span>156 Active Policies</span>
+                                    </div>
+                                </div>
+                                <div class="module-box technical">
+                                    <h4>Technical-Enforcement</h4>
+                                    <p>DevSecOps Integration</p>
+                                    <div class="module-stats">
+                                        <span>298 Policy Checks Today</span>
+                                        <span>8 Blocked Deployments</span>
+                                    </div>
+                                </div>
+                                <div class="module-box ethical">
+                                    <h4>Ethical-Governance</h4>
+                                    <p>Three-Tier Decision Making</p>
+                                    <div class="module-stats">
+                                        <span>12 Pending Reviews</span>
+                                        <span>2 Active Cases</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="threat-landscape">
+                            <h3>Future Threat Modeling</h3>
+                            <div class="threat-timeline">
+                                <div class="threat-item current">
+                                    <div class="threat-marker"></div>
+                                    <div class="threat-info">
+                                        <h4>IoT Data Collection</h4>
+                                        <span class="threat-level medium">Medium Risk - Active</span>
+                                    </div>
+                                </div>
+                                <div class="threat-item future">
+                                    <div class="threat-marker"></div>
+                                    <div class="threat-info">
+                                        <h4>Brain-Computer Interfaces</h4>
+                                        <span class="threat-level critical">Critical Risk - 2026-2030</span>
+                                    </div>
+                                </div>
+                                <div class="threat-item future">
+                                    <div class="threat-marker"></div>
+                                    <div class="threat-info">
+                                        <h4>Quantum Computing</h4>
+                                        <span class="threat-level high">High Risk - 2030-2035</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal-Policy Module Tab -->
+                <div class="tab-panel" id="legal-policy">
+                    <div class="module-layout">
+                        <div class="module-header">
+                            <h3>Legal-Policy Module</h3>
+                            <p>Automated translation of legal regulations into executable Policy-as-Code</p>
+                        </div>
+                        <div class="policy-grid">
+                            <div class="policy-editor">
+                                <div class="editor-header">
+                                    <h4>Policy-as-Code Editor</h4>
+                                    <div class="editor-controls">
+                                        <select class="form-control policy-selector">
+                                            <option value="gdpr_art25">GDPR Article 25 - Data Protection by Design</option>
+                                            <option value="gdpr_art17">GDPR Article 17 - Right to Erasure</option>
+                                            <option value="ccpa_1798">CCPA Section 1798.100 - Consumer Rights</option>
+                                        </select>
+                                        <button class="btn btn--primary btn--sm">Deploy Policy</button>
+                                    </div>
+                                </div>
+                                <div class="code-editor" id="policy-code-editor">
+                                    <pre><code class="rego-code">package gdpr.art25
+
+# GDPR Article 25: Data Protection by Design & Default
+# Ensures encryption is enforced for all data storage
+
+deny {
+  resource := input.resource_changes[_]
+  resource.type == "aws_s3_bucket"
+  resource.change.after.server_side_encryption_configuration == null
+}
+
+deny {
+  resource := input.resource_changes[_]
+  resource.type == "aws_rds_instance"
+  resource.change.after.storage_encrypted == false
+}
+
+allow {
+  input.request.encryption_enabled == true
+  input.request.compliance_verified == true
+}</code></pre>
+                                </div>
+                            </div>
+                            <div class="policy-compliance">
+                                <h4>Compliance Coverage</h4>
+                                <div class="compliance-chart-container" style="height: 250px; position: relative;">
+                                    <canvas id="complianceChart"></canvas>
+                                </div>
+                                <div class="compliance-details">
+                                    <div class="compliance-item">
+                                        <span class="regulation">GDPR</span>
+                                        <span class="coverage">94%</span>
+                                        <span class="violations">3 violations</span>
+                                    </div>
+                                    <div class="compliance-item">
+                                        <span class="regulation">CCPA</span>
+                                        <span class="coverage">91%</span>
+                                        <span class="violations">1 violation</span>
+                                    </div>
+                                    <div class="compliance-item">
+                                        <span class="regulation">CPRA</span>
+                                        <span class="coverage">89%</span>
+                                        <span class="violations">2 violations</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="policy-version-control">
+                            <h4>Policy Version History</h4>
+                            <div class="version-timeline">
+                                <div class="version-item current">
+                                    <div class="version-marker"></div>
+                                    <div class="version-info">
+                                        <span class="version">v2.1.0</span>
+                                        <span class="version-date">2025-09-28</span>
+                                        <span class="version-description">Enhanced quantum-resistant encryption requirements</span>
+                                    </div>
+                                </div>
+                                <div class="version-item">
+                                    <div class="version-marker"></div>
+                                    <div class="version-info">
+                                        <span class="version">v2.0.3</span>
+                                        <span class="version-date">2025-09-15</span>
+                                        <span class="version-description">CPRA compliance updates</span>
+                                    </div>
+                                </div>
+                                <div class="version-item">
+                                    <div class="version-marker"></div>
+                                    <div class="version-info">
+                                        <span class="version">v2.0.0</span>
+                                        <span class="version-date">2025-08-01</span>
+                                        <span class="version-description">Major refactor for multi-regulation support</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical-Enforcement Module Tab -->
+                <div class="tab-panel" id="technical">
+                    <div class="module-layout">
+                        <div class="module-header">
+                            <h3>Technical-Enforcement Module</h3>
+                            <p>DevSecOps integration with real-time privacy policy enforcement</p>
+                        </div>
+                        <div class="technical-grid">
+                            <div class="pipeline-dashboard">
+                                <h4>CI/CD Pipeline Status</h4>
+                                <div class="pipeline-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">156</span>
+                                        <span class="stat-label">Builds Today</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">134</span>
+                                        <span class="stat-label">Security Scans</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">8</span>
+                                        <span class="stat-label">Blocked Deployments</span>
+                                    </div>
+                                </div>
+                                <div class="pipeline-flow">
+                                    <div class="pipeline-stage passed">
+                                        <div class="stage-icon">✓</div>
+                                        <span>Code Commit</span>
+                                    </div>
+                                    <div class="pipeline-arrow">→</div>
+                                    <div class="pipeline-stage passed">
+                                        <div class="stage-icon">✓</div>
+                                        <span>SAST Scan</span>
+                                    </div>
+                                    <div class="pipeline-arrow">→</div>
+                                    <div class="pipeline-stage running">
+                                        <div class="stage-icon loading">⟳</div>
+                                        <span>Policy Check</span>
+                                    </div>
+                                    <div class="pipeline-arrow">→</div>
+                                    <div class="pipeline-stage pending">
+                                        <div class="stage-icon">○</div>
+                                        <span>DAST Scan</span>
+                                    </div>
+                                    <div class="pipeline-arrow">→</div>
+                                    <div class="pipeline-stage pending">
+                                        <div class="stage-icon">○</div>
+                                        <span>Deploy</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="security-scans">
+                                <h4>Security Scan Results</h4>
+                                <div class="scan-results">
+                                    <div class="scan-item critical">
+                                        <div class="scan-severity">CRITICAL</div>
+                                        <div class="scan-description">Unencrypted database connection detected</div>
+                                        <div class="scan-action">
+                                            <button class="btn btn--outline btn--sm">Remediate</button>
+                                        </div>
+                                    </div>
+                                    <div class="scan-item high">
+                                        <div class="scan-severity">HIGH</div>
+                                        <div class="scan-description">Missing data retention policy enforcement</div>
+                                        <div class="scan-action">
+                                            <button class="btn btn--outline btn--sm">Review</button>
+                                        </div>
+                                    </div>
+                                    <div class="scan-item medium">
+                                        <div class="scan-severity">MEDIUM</div>
+                                        <div class="scan-description">Weak encryption algorithm in use</div>
+                                        <div class="scan-action">
+                                            <button class="btn btn--outline btn--sm">Schedule Fix</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infrastructure-code">
+                            <h4>Infrastructure-as-Code Privacy Enforcement</h4>
+                            <div class="iac-editor">
+                                <div class="editor-tabs">
+                                    <button class="editor-tab active">terraform/main.tf</button>
+                                    <button class="editor-tab">policies/privacy.rego</button>
+                                    <button class="editor-tab">results/scan.json</button>
+                                </div>
+                                <div class="code-editor iac-code">
+                                    <pre><code># Terraform configuration with privacy policy enforcement
+resource "aws_s3_bucket" "data_lake" {
+  bucket = "company-data-lake-${random_id.bucket_suffix.hex}"
+
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        sse_algorithm     = "AES256"
+        kms_master_key_id = aws_kms_key.data_key.arn
+      }
+    }
+  }
+
+  versioning {
+    enabled = true
+  }
+
+  # Privacy policy enforcement
+  tags = {
+    DataClassification = "PII"
+    RetentionPeriod   = "7years"
+    ComplianceScope   = "GDPR,CCPA"
+  }
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ethical-Governance Module Tab -->
+                <div class="tab-panel" id="ethical">
+                    <div class="module-layout">
+                        <div class="module-header">
+                            <h3>Ethical-Governance Module</h3>
+                            <p>Three-tier decision-making framework for privacy governance</p>
+                        </div>
+                        <div class="governance-tiers">
+                            <div class="tier-card tier-1">
+                                <div class="tier-header">
+                                    <h4>Tier 1: Automated Compliance</h4>
+                                    <div class="tier-status active">Active</div>
+                                </div>
+                                <div class="tier-stats">
+                                    <div class="tier-metric">
+                                        <span class="metric-number">847</span>
+                                        <span class="metric-label">Processed Today</span>
+                                    </div>
+                                    <div class="tier-metric">
+                                        <span class="metric-number">88%</span>
+                                        <span class="metric-label">Success Rate</span>
+                                    </div>
+                                </div>
+                                <div class="tier-description">
+                                    Automated policy enforcement and compliance checking
+                                </div>
+                            </div>
+                            <div class="tier-card tier-2">
+                                <div class="tier-header">
+                                    <h4>Tier 2: Managed Exceptions</h4>
+                                    <div class="tier-status warning">12 Pending</div>
+                                </div>
+                                <div class="tier-stats">
+                                    <div class="tier-metric">
+                                        <span class="metric-number">12</span>
+                                        <span class="metric-label">Pending Reviews</span>
+                                    </div>
+                                    <div class="tier-metric">
+                                        <span class="metric-number">6h</span>
+                                        <span class="metric-label">Avg Processing</span>
+                                    </div>
+                                </div>
+                                <div class="tier-description">
+                                    Human review for policy exceptions and edge cases
+                                </div>
+                            </div>
+                            <div class="tier-card tier-3">
+                                <div class="tier-header">
+                                    <h4>Tier 3: Ethical Deliberation</h4>
+                                    <div class="tier-status critical">2 Active Cases</div>
+                                </div>
+                                <div class="tier-stats">
+                                    <div class="tier-metric">
+                                        <span class="metric-number">2</span>
+                                        <span class="metric-label">Active Cases</span>
+                                    </div>
+                                    <div class="tier-metric">
+                                        <span class="metric-number">7</span>
+                                        <span class="metric-label">Board Members</span>
+                                    </div>
+                                </div>
+                                <div class="tier-description">
+                                    Ethical Oversight Board for complex ethical dilemmas
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exception-workflow">
+                            <h4>Exception Request Workflow</h4>
+                            <div class="workflow-tracker">
+                                <div class="workflow-step completed">
+                                    <div class="step-marker">1</div>
+                                    <div class="step-content">
+                                        <h5>Request Submitted</h5>
+                                        <p>Temporary encryption bypass for data migration</p>
+                                        <span class="step-time">2 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="workflow-step active">
+                                    <div class="step-marker">2</div>
+                                    <div class="step-content">
+                                        <h5>Security Review</h5>
+                                        <p>Risk assessment in progress</p>
+                                        <span class="step-time">In progress</span>
+                                    </div>
+                                </div>
+                                <div class="workflow-step pending">
+                                    <div class="step-marker">3</div>
+                                    <div class="step-content">
+                                        <h5>Privacy Officer Approval</h5>
+                                        <p>Awaiting DPO review</p>
+                                        <span class="step-time">Pending</span>
+                                    </div>
+                                </div>
+                                <div class="workflow-step pending">
+                                    <div class="step-marker">4</div>
+                                    <div class="step-content">
+                                        <h5>Implementation</h5>
+                                        <p>Temporary exception deployment</p>
+                                        <span class="step-time">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documentation Tab -->
+                <div class="tab-panel" id="documentation">
+                    <div class="documentation-layout">
+                        <div class="doc-sidebar">
+                            <h4>Documentation</h4>
+                            <nav class="doc-nav">
+                                <a href="#implementation" class="doc-link active">Implementation Guide</a>
+                                <a href="#api-reference" class="doc-link">API Reference</a>
+                                <a href="#policy-examples" class="doc-link">Policy Examples</a>
+                                <a href="#governance-guide" class="doc-link">Governance Guide</a>
+                                <a href="#references" class="doc-link">References</a>
+                            </nav>
+                        </div>
+                        <div class="doc-content">
+                            <section id="implementation" class="doc-section">
+                                <h3>Implementation Guide</h3>
+                                <p>The Dynamic Digital Privacy Framework provides a comprehensive approach to privacy governance through three integrated modules:</p>
+                                
+                                <h4>Quick Start</h4>
+                                <div class="code-block">
+                                    <pre><code># Install DDP Framework CLI
+npm install -g ddp-framework
+
+# Initialize new privacy project
+ddp init my-privacy-project
+
+# Deploy initial policies
+ddp deploy --module legal-policy
+ddp deploy --module technical-enforcement
+ddp deploy --module ethical-governance</code></pre>
+                                </div>
+
+                                <h4>Architecture Overview</h4>
+                                <p>The framework operates through three interconnected modules:</p>
+                                <ul>
+                                    <li><strong>Legal-Policy Module:</strong> Translates legal requirements into executable policies</li>
+                                    <li><strong>Technical-Enforcement Module:</strong> Integrates privacy checks into DevSecOps workflows</li>
+                                    <li><strong>Ethical-Governance Module:</strong> Provides human oversight for complex decisions</li>
+                                </ul>
+                            </section>
+
+                            <section id="api-reference" class="doc-section">
+                                <h3>API Reference</h3>
+                                <h4>Policy Management API</h4>
+                                <div class="api-endpoint">
+                                    <div class="endpoint-method">POST</div>
+                                    <div class="endpoint-path">/api/v1/policies</div>
+                                    <div class="endpoint-description">Create new privacy policy</div>
+                                </div>
+                                <div class="api-endpoint">
+                                    <div class="endpoint-method">GET</div>
+                                    <div class="endpoint-path">/api/v1/policies/{id}/compliance</div>
+                                    <div class="endpoint-description">Get policy compliance status</div>
+                                </div>
+                                <div class="api-endpoint">
+                                    <div class="endpoint-method">POST</div>
+                                    <div class="endpoint-path">/api/v1/exceptions/request</div>
+                                    <div class="endpoint-description">Submit exception request</div>
+                                </div>
+                            </section>
+
+                            <section id="policy-examples" class="doc-section">
+                                <h3>Policy Examples</h3>
+                                <h4>GDPR Article 25 Implementation</h4>
+                                <div class="code-block">
+                                    <pre><code>package gdpr.art25
+
+# Data Protection by Design and by Default
+default allow = false
+
+allow {
+    input.action == "data_processing"
+    input.purpose in ["consent", "contract", "legal_obligation"]
+    input.data_minimization == true
+    input.encryption_enabled == true
+}</code></pre>
+                                </div>
+                            </section>
+
+                            <section id="governance-guide" class="doc-section">
+                                <h3>Governance Guide</h3>
+                                <h4>Three-Tier Decision Framework</h4>
+                                <p>The governance model operates on three levels of decision-making complexity:</p>
+                                <ol>
+                                    <li><strong>Tier 1 - Automated:</strong> Standard compliance checks with 88% success rate</li>
+                                    <li><strong>Tier 2 - Managed:</strong> Human review for exceptions, ~6 hour processing time</li>
+                                    <li><strong>Tier 3 - Ethical:</strong> Oversight board for complex ethical dilemmas</li>
+                                </ol>
+                            </section>
+
+                            <section id="references" class="doc-section">
+                                <h3>References</h3>
+                                <div class="references-list">
+                                    <div class="reference-item">
+                                        <strong>[1]</strong> Degni, F. (2025). "Dynamic Digital Privacy: A Three-Module Framework for Adaptive Privacy Governance." <em>IEEE ISOPE 2025 Proceedings</em>.
+                                    </div>
+                                    <div class="reference-item">
+                                        <strong>[2]</strong> European Union. (2016). "General Data Protection Regulation (GDPR)." <em>Official Journal of the European Union</em>, L 119/1.
+                                    </div>
+                                    <div class="reference-item">
+                                        <strong>[3]</strong> California Legislature. (2018). "California Consumer Privacy Act (CCPA)." <em>California Civil Code Section 1798.100</em>.
+                                    </div>
+                                    <div class="reference-item">
+                                        <strong>[4]</strong> Open Policy Agent. (2024). "Policy as Code: The OPA Approach." <em>Cloud Native Computing Foundation</em>.
+                                    </div>
+                                    <div class="reference-item">
+                                        <strong>[5]</strong> NIST. (2024). "Privacy Framework: A Tool for Improving Privacy Through Enterprise Risk Management." <em>NIST Special Publication 800-53</em>.
+                                    </div>
+                                    <div class="reference-item">
+                                        <strong>[6]</strong> IEEE Computer Society. (2024). "Ethical Design of Autonomous and Intelligent Systems." <em>IEEE Standards Association</em>.
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Fabrizio Degni. Dynamic Digital Privacy Framework.</p>
+                    <p>Presented at IEEE ISOPE 2025, New York</p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://ieee-isope.org/" target="_blank" rel="noopener">IEEE ISOPE 2025</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
